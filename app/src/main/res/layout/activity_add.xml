@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    tools:context=".Activity.AddActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Mobil"
+        android:layout_gravity="center_horizontal"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_name"
+        android:hint="Nama Mobil"
+        android:textSize="21sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_country"
+        android:hint="Asal Negara"
+        android:textSize="21sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_est"
+        android:hint="Tahun Berdiri"
+        android:textSize="21sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_founder"
+        android:hint="Pendiri"
+        android:textSize="21sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_description"
+        android:hint="Deskripsi"
+        android:textSize="21sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/btn_add"
+        android:layout_marginTop="16dp"
+        android:text="Tambah"
+        android:textSize="21sp" />
+</LinearLayout>
