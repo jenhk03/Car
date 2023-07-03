@@ -6,12 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.example.car.API.APIRequestData;
 import com.example.car.API.RetroServer;
 import com.example.car.Model.ResponseModel;
 import com.example.car.R;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,6 +80,7 @@ public class AddActivity extends AppCompatActivity
                 String code = response.body().getCode();
                 String message = response.body().getMessage();
                 Toast.makeText(AddActivity.this, "Kode: " + code + ", Pesan: " + message, Toast.LENGTH_SHORT).show();
+                finish();
             }
             @Override
             public void onFailure(Call<ResponseModel> call, Throwable t)
