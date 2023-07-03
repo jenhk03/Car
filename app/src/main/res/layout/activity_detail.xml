@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="Nama Mobil"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:padding="6dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_country"
+            android:text="Asal Negara"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_est"
+            android:text="Tahun Berdiri"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_founder"
+            android:text="Pendiri"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_description"
+            android:text="Deskripsi"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp" />
+    </LinearLayout>
+</ScrollView>
