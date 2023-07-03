@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.car.API.APIRequestData;
 import com.example.car.API.RetroServer;
 import com.example.car.Activity.ChangeActivity;
+import com.example.car.Activity.DetailActivity;
 import com.example.car.Activity.MainActivity;
 import com.example.car.Model.CarModel;
 import com.example.car.Model.ResponseModel;
@@ -23,7 +24,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CarAdapter
+public class CarAdapter extends RecyclerView.Adapter<CarAdapter.VHCar>
 {
     private Context ctx;
     private List<CarModel> listCar;
@@ -67,6 +68,21 @@ public class CarAdapter
             tvEst = itemView.findViewById(R.id.tv_est);
             tvFounder = itemView.findViewById(R.id.tv_founder);
             tvDescription = itemView.findViewById(R.id.tv_description);
+            itemView.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Intent open = new Intent(ctx, DetailActivity.class);
+                    open.putExtra("xId", tvId.getText().toString());
+                    open.putExtra("xName", tvName.getText().toString());
+                    open.putExtra("xCountry", tvCountry.getText().toString());
+                    open.putExtra("xEst", tvEst.getText().toString());
+                    open.putExtra("xFounder", tvFounder.getText().toString());
+                    open.putExtra("xDescription", tvDescription.getText().toString());
+                    ctx.startActivity(open);
+                }
+            });
             itemView.setOnLongClickListener(new View.OnLongClickListener()
             {
                 @Override
